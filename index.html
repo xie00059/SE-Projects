@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Software Privacy and Testing</title>
 </head>
 <body>
@@ -13,18 +13,26 @@
         </div>
     </header>
 
+
+
     <section class="description">
         <div class="desc-content">
 
-            <div class="desc-title">
-                <span>Description</span>
+            <div class="pics">
+                <img src="./Amazon-Alexa-Skills.jpeg" alt="Hey Alexa">
             </div>
+
+            <!-- <div class="desc-title">
+                <span>Description</span>
+            </div> -->
     
             <div class="desc-detail">
                 <div class="detail">
-                    The boom of the virtual personal assistant (VPA) in recent years has accelerated the integration of various smart devices into our daily lives. Centered around them, an ecosystem involving service providers, third-party developers, and end-users, has started being formulated. The developers are enabled to create applications and release them through application stores, from which the users can obtain them and then run them on smart devices. Various applications, such as Amazon Alexa skills and Google Assistant Actions, have been developed to provide a wide range of functionalities from playing music, making phone calls, to controlling smart home devices. 
-                    Although VPA services providers have required developers to provide documents to disclose their apps’ data handling practices, the feature of verbal user interaction of VPA may still put users’ privacy in risk. If VPA apps do not honestly declare their data handling practices in their privacy policy documents or collect user data that is out of their functionality needs, users’ privacy is still violated.
+                    The boom of the virtual personal assistant (VPA) in recent years has accelerated the integration of various smart devices into our daily lives. 
+                    Centered around them, an ecosystem involving service providers, third-party developers, and end-users, has started being formulated. The developers are enabled to create applications and release them through application stores, from which the users can obtain them and then run them on smart devices. Various applications, such as Amazon Alexa skills and Google Assistant Actions, have been developed to provide a wide range of functionalities from playing music, making phone calls, to controlling smart home devices. 
+                    <br><br>Although VPA services providers have required developers to provide documents to disclose their apps’ data handling practices, the feature of verbal user interaction of VPA may still put users’ privacy in risk. If VPA apps do not honestly declare their data handling practices in their privacy policy documents or collect user data that is out of their functionality needs, users’ privacy is still violated. Thus, we aim to conduct the privacy assessment and enhancement of VPA apps.
                 </div>
+               
 
               <!--   <div class="detail">
                     Some contents...
@@ -38,50 +46,57 @@
         
     </section>
 
-    <section class="topics">
-        <div class="topics-content">
+    <nav class="sidebar">
+        <div class="topics">
+            <div class="topics-content">
 
-            <div class="topics-title">
-                <span>Research Topics</span>
-            </div>
-    
-            <div class="topics-detail">
-                <div class="detail">
-                    <a href="">Scrutinizing privacy policy compliance of VPA apps</a>
+                <div class="topics-title">
+                    <span>Research Topics</span>
                 </div>
+        
+                <div class="topics-detail">
+                    <div class="detail">
+                        <a href="#SKIPPER">Scrutinizing privacy policy compliance of VPA apps</a>
+                    </div>
 
-                <div class="detail">
-                    <a href="">Checking VPA apps' excessive data collection from functionality topics</a>
+                    <div class="detail">
+                        <a href="#PICO">Checking VPA apps' excessive data collection from functionality topics</a>
+                    </div>
+
+                <!--  <div class="detail">
+                        <a href="">To be added...</a> 
+                    </div> -->
                 </div>
+            </div>      
+        </div>
+    </nav>
 
-               <!--  <div class="detail">
-                    <a href="">To be added...</a> 
-                </div> -->
-            </div>
-        </div>      
-    </section>
 
     <section class="topic-1">
         <div class="topic-1-content">
 
-            <div class="topic-1-title">
+            <div id="SKIPPER" class="topic-1-title">
                 <span>Scrutinizing privacy policy compliance of VPA apps</span>
             </div>
     
             <div class="topic-1-detail">
 
                 <div class="detail">
+                    <img src="./SKIPPER’s approach poster.jpg" alt="A three-phase solution to detect privacy policy (in)compliance cases on Amazon Alexa platform.">
+                </div>
+
+                <div class="detail">
                      VPA apps are accompanied by a privacy policy document that informs users of their data handling practices. These documents are usually lengthy and complex for users to comprehend, and developers may intentionally or unintentionally fail to comply with them. In this work, we conduct the first systematic study on the privacy policy compliance issue of VPA apps. 
                 </div>
                 
                 <div class="detail">
-                    The core idea of project is to portray the skill as its declared privacy profile and behavioral privacy profile, and then to check these two profiles for inconsistencies.
+                    The core idea of project SKIPPER is to portray the skill as its declared privacy profile and behavioral privacy profile, and then to check these two profiles for inconsistencies.
                     By referring to literature on privacy policy studies and reviewing privacy policy documents of major developers like Google and Amazon, we include four testable categories of privacy policies that are commonly included in privacy policy documents, including PP-1 (TYPES): policies on the types of data to collect, PP-2 (CHILDREN): policies on child protection mechanisms, PP-3 (REGIONS): policies on protection mechanisms for special regions, and PP-4 (RETENTION): policies on data retention period.
                 </div>
 
+
                 <div class="detail">
-                    Add pics here
-                    you can access the paper and code from here
+                    You can access the paper and code from <a href="https://xie00059.github.io/projects/" target="_blank">here</a>.
                 </div>
 
                 
@@ -92,7 +107,7 @@
     <section class="topic-1">
         <div class="topic-1-content">
 
-            <div class="topic-1-title">
+            <div id="PICO" class="topic-1-title">
                 <span>Checking VPA apps' excessive data collection from functionality topics</span>
             </div>
     
@@ -105,9 +120,9 @@
                     The core idea of Pico is to check the inconsistency between the skill’s data needed and data requested. Pico first clusters the skills by their functionality-related documents, and then, it checks the inconsistency issues by detecting the outliers in their requested data within each skill cluster. 
                 </div>
 
-                <div class="detail">
+                <!-- <div class="detail">
                     add pics
-                </div>
+                </div> -->
 
                 
             </div>
